@@ -1,10 +1,16 @@
 {
     "name": "bandpol",
     "description": "Bandymų poligonas",
-    "version": "1.0.0",
     "private": true,
+    "version": "1.0.0",
+    "scripts": {
+        "start": "(cd ./packages/server; tsc && node dist/app.js)"
+    },
     "workspaces": [
         "packages/*"
     ],
-    "license": "MIT"
+    "license": "MIT",
+    "devDependencies": {
+        "concurrently": "^4.1.1"
+    }
 }
