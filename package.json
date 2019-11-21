@@ -4,7 +4,8 @@
     "private": true,
     "version": "1.0.0",
     "scripts": {
-        "start": "(cd ./packages/server; tsc && node dist/app.js)"
+        "build:client": "(cd ./packages/client; npx webpack --config webpack.config.ts)",
+        "start": "(cd ./packages/server; tsc && node ../../dist/server/app.js)"
     },
     "workspaces": {
         "packages": [
